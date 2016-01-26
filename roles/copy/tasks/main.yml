@@ -1,0 +1,5 @@
+---
+- name: Copy war to target
+  copy: src=../../../example.war dest=/var/lib/tomcat7/webapps/example.war
+  sudo: yes
+  when: packages|success
